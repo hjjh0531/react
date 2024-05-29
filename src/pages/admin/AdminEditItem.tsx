@@ -139,7 +139,7 @@ export default function AdminEditItem() {
     console.log(info);
     try {
       const res = await axios.post(
-        `http://13.125.209.170:8080/admin/edit/product/${info.id}`,
+        `https://pershop.store/admin/edit/product/${info.id}`,
         info,
         {
           withCredentials: true,

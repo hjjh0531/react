@@ -151,7 +151,7 @@ export default function Citrus() {
   const getItems = async () => {
     try {
       const res = await axios.get(
-        `http://13.125.209.170:8080/product/category?categoryId=1`,
+        `https://pershop.store/product/category?categoryId=1`,
         {
           withCredentials: true,
         }
@@ -176,7 +176,7 @@ export default function Citrus() {
 
   const getLike = async () => {
     try {
-      const res = await axios.get("http://13.125.209.170:8080/like/list", {
+      const res = await axios.get("https://pershop.store/like/list", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token"),
@@ -196,7 +196,7 @@ export default function Citrus() {
   const handleLike = async (productId: any) => {
     try {
       const res = await axios.post(
-        `http://13.125.209.170:8080/like/${productId}`,
+        `https://pershop.store/like/${productId}`,
         null,
         {
           withCredentials: true,

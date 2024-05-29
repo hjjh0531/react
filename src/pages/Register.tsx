@@ -143,7 +143,7 @@ export default function Register() {
     }
 
     try {
-      const res = await axios.post(`http://13.125.209.170:8080/member/join`, payload, { 
+      const res = await axios.post(`https://pershop.store/member/join`, payload, { 
         headers: {
           Accept: "*/*"
         }

@@ -146,7 +146,7 @@ export default function Musk() {
 
   const getItems = async() => {
     try {
-      const res = await axios.get(`http://13.125.209.170:8080/product/category?categoryId=2`, {
+      const res = await axios.get(`https://pershop.store/product/category?categoryId=2`, {
         withCredentials: true
       })
       setItems(res.data);
@@ -170,7 +170,7 @@ export default function Musk() {
 
   const getLike = async() => {
     try {
-      const res = await axios.get("http://13.125.209.170:8080/like/list", {
+      const res = await axios.get("https://pershop.store/like/list", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem('token')
@@ -189,7 +189,7 @@ export default function Musk() {
 
   const handleLike = async(productId: any) => {
     try {
-      const res = await axios.post(`http://13.125.209.170:8080/like/${productId}`, null, {
+      const res = await axios.post(`https://pershop.store/like/${productId}`, null, {
         withCredentials: true,
         headers: {
           'X-Auth-Token': localStorage.getItem("token")

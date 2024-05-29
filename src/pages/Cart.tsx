@@ -308,7 +308,7 @@ export default function Cart() {
 
   const getItemsInCart = async () => {
     try {
-      const res = await axios.get("http://13.125.209.170:8080/cart/getCart", {
+      const res = await axios.get("https://pershop.store/cart/getCart", {
         withCredentials: true,
         headers: {
           "X-Auth-Token" : localStorage.getItem("token")
@@ -337,7 +337,7 @@ export default function Cart() {
 
   const handleDeleteCart = async() => {
     try {
-      const res = await axios.delete("http://13.125.209.170:8080/cart/removeCart", {
+      const res = await axios.delete("https://pershop.store/cart/removeCart", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token")

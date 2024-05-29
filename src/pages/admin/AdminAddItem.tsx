@@ -152,7 +152,7 @@ export default function AdminAddItem() {
     console.log(info);
     try {
       const res = await axios.post(
-        "http://13.125.209.170:8080/admin/add/product",
+        "https://pershop.store/admin/add/product",
         info,
         {
           withCredentials: true,

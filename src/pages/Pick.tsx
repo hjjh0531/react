@@ -121,7 +121,7 @@ export default function Pick() {
 
   const getPickList = async() => {
     try {
-      const res = await axios.get("http://13.125.209.170:8080/like/list", {
+      const res = await axios.get("https://pershop.store/like/list", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token")

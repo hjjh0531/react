@@ -149,7 +149,7 @@ export default function AdminViewItem() {
 
   const getItems = async() => {
     try {
-      const res = await axios.get(`http://13.125.209.170:8080/admin/view/product/1/1000  `, {
+      const res = await axios.get(`hhttps://pershop.store/admin/view/product/1/1000  `, {
         withCredentials: true,
         headers: {
           'X-Auth-Token': localStorage.getItem("token")

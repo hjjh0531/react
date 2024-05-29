@@ -145,7 +145,7 @@ export default function AdminLogin() {
       }
   
       try {
-        const res = await axios.post(`http://13.125.209.170:8080/admin/login`, payload, { withCredentials: true })
+        const res = await axios.post(`https://pershop.store/admin/login`, payload, { withCredentials: true })
         console.log(res.headers)
         localStorage.setItem("token", res.headers["x-auth-token"])
         // console.log(res.headers["x-auth-token"])
