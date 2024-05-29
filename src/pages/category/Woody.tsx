@@ -147,7 +147,7 @@ export default function Woddy() {
 
   const getItems = async() => {
     try {
-      const res = await axios.get(`http://localhost:8080/product/category?categoryId=6`, {
+      const res = await axios.get(`http://13.125.209.170:8080/product/category?categoryId=6`, {
         withCredentials: true
       })
       setItems(res.data);
@@ -171,7 +171,7 @@ export default function Woddy() {
 
   const getLike = async() => {
     try {
-      const res = await axios.get("http://localhost:8080/like/list", {
+      const res = await axios.get("http://13.125.209.170:8080/like/list", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem('token')
@@ -190,7 +190,7 @@ export default function Woddy() {
 
   const handleLike = async(productId: any) => {
     try {
-      const res = await axios.post(`http://localhost:8080/like/${productId}`, null, {
+      const res = await axios.post(`http://13.125.209.170:8080/like/${productId}`, null, {
         withCredentials: true,
         headers: {
           'X-Auth-Token': localStorage.getItem("token")

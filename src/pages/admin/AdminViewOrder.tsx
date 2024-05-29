@@ -73,7 +73,7 @@ export default function AdminViewOrder() {
   const getOrder = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8080/admin/view/orders/1/1000`,
+        `http://13.125.209.170:8080/admin/view/orders/1/1000`,
         {
           withCredentials: true,
           headers: {

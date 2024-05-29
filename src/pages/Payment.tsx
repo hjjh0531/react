@@ -286,7 +286,7 @@ export default function Payment() {
     };
     try {
       const res = await axios.post(
-        "http://localhost:8080/order/cart",
+        "http://13.125.209.170:8080/order/cart",
         payload,
         {
           withCredentials: true,
@@ -316,7 +316,7 @@ export default function Payment() {
     };
     try {
       const res = await axios.post(
-        `http://localhost:8080/order/detail/${state.itemData.productId}`,
+        `http://13.125.209.170:8080/order/detail/${state.itemData.productId}`,
         payload,
         {
           withCredentials: true,
@@ -338,7 +338,7 @@ export default function Payment() {
 
   const getItemsInCart = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/cart/getCart", {
+      const res = await axios.get("http://13.125.209.170:8080/cart/getCart", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token"),

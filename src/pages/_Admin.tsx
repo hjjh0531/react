@@ -134,7 +134,7 @@ export default function Admin() {
 
   const getItems = async() => {
     try {
-      const res = await axios.get("http://localhost:8080/admin/product/all", {
+      const res = await axios.get("http://13.125.209.170:8080/admin/product/all", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token")

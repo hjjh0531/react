@@ -147,7 +147,7 @@ export default function Floral() {
 
   const getItems = async() => {
     try {
-      const res = await axios.get(`http://localhost:8080/product/category?categoryId=5`, {
+      const res = await axios.get(`http://13.125.209.170:8080/product/category?categoryId=5`, {
         withCredentials: true
       })
       setItems(res.data);
@@ -170,7 +170,7 @@ export default function Floral() {
 
   const getLike = async() => {
     try {
-      const res = await axios.get("http://localhost:8080/like/list", {
+      const res = await axios.get("http://13.125.209.170:8080/like/list", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem('token')
@@ -189,7 +189,7 @@ export default function Floral() {
 
   const handleLike = async(productId: any) => {
     try {
-      const res = await axios.post(`http://localhost:8080/like/${productId}`, null, {
+      const res = await axios.post(`http://13.125.209.170:8080/like/${productId}`, null, {
         withCredentials: true,
         headers: {
           'X-Auth-Token': localStorage.getItem("token")

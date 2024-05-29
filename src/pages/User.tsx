@@ -125,7 +125,7 @@ export default function User () {
       return;
     }
     try {
-      const res = await axios.get("http://localhost:8080/member/info", {
+      const res = await axios.get("http://13.125.209.170:8080/member/info", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token")

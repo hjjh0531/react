@@ -83,7 +83,7 @@ export default function Order() {
 
   const getMyOrder = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/order/my", {
+      const res = await axios.get("http://13.125.209.170:8080/order/my", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token"),

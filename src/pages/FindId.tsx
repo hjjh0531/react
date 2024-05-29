@@ -103,7 +103,7 @@ export default function FindId() {
     const handleFindPassword = async () => {      
       console.log(info);
       try {
-        const res = await axios.post(`http://localhost:8080/member/find-id`, info)
+        const res = await axios.post(`http://13.125.209.170:8080/member/find-id`, info)
 
         alert(`아이디는 ${res.data} 입니다.`);
         console.log(res.data);

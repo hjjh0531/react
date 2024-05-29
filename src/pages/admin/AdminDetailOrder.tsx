@@ -160,7 +160,7 @@ export default function AdminDetailOrder() {
   const getDetailOrder = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8080/admin/view/details/items/${state.orderId}`,
+        `http://13.125.209.170:8080/admin/view/details/items/${state.orderId}`,
         {
           withCredentials: true,
           headers: {
@@ -179,7 +179,7 @@ export default function AdminDetailOrder() {
   const handleChangeOrderState = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:8080/admin/change/state/${state.orderId}`,
+        `http://13.125.209.170:8080/admin/change/state/${state.orderId}`,
         {
           orderState: selectedState,
         },

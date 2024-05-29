@@ -270,7 +270,7 @@ export default function ItemDetail() {
     console.log(state.itemData.productId);
 
     try {
-      const res = await axios.post('http://localhost:8080/cart/addCart', {
+      const res = await axios.post('http://13.125.209.170:8080/cart/addCart', {
         productQuantities: {
           [state.itemData.productId]: quantity
         }
@@ -296,7 +296,7 @@ export default function ItemDetail() {
 
   const handleLike = async() => {
     try {
-      const res = await axios.post(`http://localhost:8080/like/${state.itemData.productId}`, {
+      const res = await axios.post(`http://13.125.209.170:8080/like/${state.itemData.productId}`, {
         
       }, {
         withCredentials: true,
@@ -314,7 +314,7 @@ export default function ItemDetail() {
 
   const getLike = async() => {
     try {
-      const res = await axios.get("http://localhost:8080/like/list", {
+      const res = await axios.get("http://13.125.209.170:8080/like/list", {
         withCredentials: true,
         headers: {
           "X-Auth-Token": localStorage.getItem("token")

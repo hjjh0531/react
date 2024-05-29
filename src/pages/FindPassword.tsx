@@ -103,7 +103,7 @@ export default function FindPassword() {
     const handleFindPassword = async () => {      
       console.log(info);
       try {
-        const res = await axios.post(`http://localhost:8080/member/find-password`, info)
+        const res = await axios.post(`http://13.125.209.170:8080/member/find-password`, info)
 
         alert(`비밀번호는 ${res.data} 입니다.`);
         console.log(res.data);
